@@ -266,6 +266,17 @@ body.lock {
    }
 
    &__item {
+      @media (max-width: 850px){
+         margin-bottom: 10px;
+      }
+   }
+   &__row{
+      display: flex;
+      justify-content: space-around;
+      @media (max-width: 850px){
+         flex-direction: column;
+         align-items: center;
+      }
    }
 
    &__slide {
@@ -353,29 +364,6 @@ body.lock {
       box-shadow: 2px 2px 2px #000;
       transition: all 0.5s ease 0s;
    }
-}
-
-.friends-slider .swiper-button-prev::after,
-.friends-slider .swiper-button-next::after {
-   border: 2px solid #f1cdb3;
-   border-radius: 50px;
-   font-size: 40px;
-   color: #4a4a4a;
-   @media (max-width: 767px) {
-      display: none;
-   }
-}
-.friends-slider .swiper-button-prev:hover,
-.friends-slider .swiper-button-next:hover {
-   background-color: #f1cdb3;
-   border: 2px solid #f1cdb3;
-   border-radius: 50px;
-   transition: all 0.5s ease 0s;
-   box-shadow: 2px 2px 2px #000;
-}
-.friends-slider .swiper-button-prev,
-.friends-slider .swiper-button-next {
-   transition: all 0.5s ease 0s;
 }
 
 .help {
